@@ -1,0 +1,266 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .container{
+    width: 1000px;
+    margin: 0 auto;
+} */
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+    width: 100%;
+}
+
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+.head-section{
+    background-color: rgba(54, 164, 168, 0.637);
+    text-align: center;
+}
+.logo img{
+    width: 100px;
+}
+.menu{
+    padding: 1% 7%;
+}
+.menu a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin:20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.menu a:hover{
+    background-color: rgba(0, 0, 0, 0.289);
+}
+.head-section::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+#banner{
+    text-align: center;
+    background-image: url(banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 12% 20%;
+
+}
+
+.banner-head{
+    background-color: rgba(255, 255, 0, 0.87);
+    color: black;
+    text-align: center;
+    font-family: 'Handlee', cursive;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+.banner-head h1{
+    padding: 20px 0;
+}
+.banner-desc h3{
+    background-color: green;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 3px;
+}
+.btn{
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#about-us{
+    text-align: center;
+    padding: 3% 2%;
+}
+#about-us h2{
+    margin: 8px 0;
+    font-family: 'Roboto', sans-serif;
+}
+#food-menu{
+    padding: 1% 7%;
+}
+.card{
+    text-align: center;
+    transition: .2s;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-img img{
+    max-width: 100%;
+    display: block;
+}
+.card-desc h3{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+.desc-desc{
+    background-color: gray;
+}
+.desc-desc p{
+    padding: 10px 0;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+#contact-section{
+    background-color: rgb(88, 146, 208);
+}
+.map2{
+    text-align: center;
+   width: 500px;
+    height: 300px;
+}
+.map{
+    /* width: 500px;
+    height: 300px; */
+    text-align: center;
+}
+.address-a{
+    text-align: center;
+    padding: 2% 7%;
+    color: white;
+}
+.address-a h2{
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.address-a  h3{
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+address{
+    margin-bottom: 20px;
+}
+
+.footer-section{
+    text-align: center;
+    background-color: rgb(0, 0, 162);
+    padding: 1% 0;
+}
+.copyright p{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.social-icon{
+    margin-top: 10px;
+}
+.icon-style {
+    color:white;
+    font-size: 20px;
+    margin: 0 10px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.icon-style:hover{
+    background-color: white;
+    color: black;
+}
+/* Tablate Design */
+
+
+/* Desktop Design */
+@media screen and (min-width: 400px){
+    .map2{
+        text-align: center;
+       max-width: 100%;
+       max-height: 100%;
+    }
+}
+    
+@media screen and (min-width: 992px) {
+    .col-pc-1 {width: 8.33%;}
+    .col-pc-2 {width: 16.66%;}
+    .col-pc-3 {width: 25%;}
+    .col-pc-4 {width: 33.33%;}
+    .col-pc-5 {width: 41.66%;}
+    .col-pc-6 {width: 50%;}
+    .col-pc-7 {width: 58.33%;}
+    .col-pc-8 {width: 66.66%;}
+    .col-pc-9 {width: 75%;}
+    .col-pc-10 {width: 83.33%;}
+    .col-pc-11 {width: 91.66%;}
+    .col-pc-12 {width: 100%;}
+
+    
+.logo{
+    text-align: left;
+}
+.menu{
+    text-align: right;
+}
+.menu a{
+    display: inline-block;
+    margin:20px 10px;
+    transition: .2s;
+}
+.menu a:hover{
+    background-color: transparent;
+    transform: scale(1.3);
+    text-decoration: underline;
+}
+
+.banner-head{
+    font-size: 1.7rem;
+}
+#about-us{
+    text-align: center;
+}
+#about-us h2{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    font-size:2rem;
+    margin-top: -10px;
+}
+
+.address-a{
+    margin-top: 50px;
+}
+
+.copyright p{
+    text-align: left;
+    margin-top: 10px;
+}
+.social-icon {
+    text-align: right;
+}
+
+}
